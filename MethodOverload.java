@@ -1,3 +1,9 @@
+/*
+Neither this keyword be used in static method nor same class non-static method directly invoked in static method.
+
+2017 by Kaushalya Mandaliya
+*/
+
 public class MethodOverload
 {
   double area(double radius) {
@@ -14,7 +20,7 @@ public class MethodOverload
   public static void main(String[] args) {
     double a, b;
     int c;
-    // Have to take object of class because this can't be used in static method.
+    // Have to take object of class, because this can't be used in static method.
     MethodOverload m = new MethodOverload();
     a = m.area(12.12);
     b = m.area(12.12, 12.12);
